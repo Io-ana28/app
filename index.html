@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>WeatheryTimes</title>
+
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="images/logo.png" alt="Weathery Times Logo" class="logo" />
+    <form id="search-form">
+        <input type="search" placeholder="Search for another city" id="city-input" />
+        <button>Search</button>
+    </form>
+    <div class="card citycard">
+        <div class="container">
+            <div class="row">
+                <div class="col"><span class="city">Prague</span>
+                    <span class="units"><sup>
+                            <a href="#" id="celsius-link">°C</a> |
+                            <a href="#" id="celsius-link">°F</a>
+                        </sup>
+                    </span>
+                </div>
+                <div class="col"><span class="cityemoji">☀️</span> </div>
+            </div>
+            <div class="row">
+                <div class="col"><span class="currtemp"><strong>-5°C / -15°C 🌙</strong> <br><span id="date"
+                            class="text-muted">Sunday,
+                            February 14th, 2021</span></span> </div>
+                <div class="col"><span class="currdetails">Precipitation: 3% <br>UV Index: Low <br> Humidity: 20% <br>
+                        Don't be
+                        tricked by the sun, dress well. </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card futurecard">
+        <div class="container">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card w-25">
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center">☀️</h5>
+                            <p class="card-text text-center"><strong>-4°C / -5°C 🌙</strong> <br> <span class="info">
+                                    Precipitation:
+                                    0%<br>UV Index: Low <br> Humidity: 20% <br> Don't be tricked by the sun, dress
+                                    well.</span></p>
+                            <p class="card-text text-center"><small class="text-muted">Monday, February 15th,
+                                    2021</small></p>
+                        </div>
+                    </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">⛅️</h5>
+                            <p class="card-text text-center"><strong>3°C / 0°C 🌙</strong> <br> <span
+                                    class="info">Precipitation:
+                                    24%<br>UV Index: Low <br> Humidity: 20% <br>Temperatures are starting to go
+                                    up.</span></p>
+                            <p class="card-text text-center"><small class="text-muted">Tuesday, February 16th,
+                                    2021</small></p>
+                        </div>
+                    </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">🌨</h5>
+                            <p class="card-text text-center"><strong>3°C / -1°C 🌙</strong> <br> <span
+                                    class="info">Precipitation:
+                                    50%<br>UV Index: Low <br> Humidity: 20% <br>Don't forget your gloves and
+                                    umbrella.</span></p>
+                            <p class="card-text text-center"><small class="text-muted">Wednesday, February 17th,
+                                    2021</small></p>
+                        </div>
+                    </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">🌧</h5>
+                            <p class="card-text text-center"><strong> 4°C / 0°C 🌙</strong> <br> <span
+                                    class="info">Precipitation:
+                                    60%<br>UV Index: Low <br> Humidity: 20% <br>Don't forget your umbrella.</span></p>
+                            <p class="card-text text-center"><small class="text-muted">Thursday, February 18th,
+                                    2021</small></p>
+                        </div>
+                    </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">🌧</h5>
+                            <p class="card-text text-center"><strong>8°C / 0°C 🌙</strong> <br> <span
+                                    class="info">Precipitation:
+                                    51%<br>UV Index: Low <br> Humidity: 20% <br>Don't forget your umbrella.</span></p>
+                            <p class="card-text text-center"><small class="text-muted">Friday, February 19th,
+                                    2021</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="src/index.js"></script>
+</body>
+
+</html>
