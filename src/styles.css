@@ -90,3 +90,10 @@ input {
 .text-muted {
   font-size: 10px;
 }
+.code-link {
+  font-size: 15px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
