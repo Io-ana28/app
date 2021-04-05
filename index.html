@@ -30,24 +30,29 @@
     </div>
     
     <div class="card citycard">
-       
+       <h1 class="city">Prague
+    <span class="units"><sup>
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="celsius-link">°F</a>
+        </sup>
+    </span></h1>
             <div class="row">
-                <div class="col"><span class="city">Prague</span>
-                    <span class="units"><sup>
-                            <a href="#" id="celsius-link">°C</a> |
-                            <a href="#" id="celsius-link">°F</a>
-                        </sup>
-                    </span>
-                </div>
-                <div class="col"><span class="cityemoji">☀️</span> </div>
+            <div class="col"><ul>
+                    <li><span class="cityemoji">☀️</span></li>
+                    <li><span class="currtemp"><strong>-5°C / -15°C 🌙</strong></li>
+                    <li><span id="date" class="text-muted">Sunday,
+                        February 14th, 2021</span></li>
+                </ul>          
             </div>
-            <div class="row">
-                <div class="col"><span class="currtemp"><strong>-5°C / -15°C 🌙</strong> <br><span id="date"
-                            class="text-muted">Sunday,
-                            February 14th, 2021</span></span> </div>
-                <div class="col"><span class="currdetails">Precipitation: 3% <br>UV Index: Low <br> Humidity: 20% <br>
-                        Don't be
-                        tricked by the sun, dress well. </span>
+            
+           
+                <div class="col"><span class="currdetails"><ul>
+                    <li id="precipitation">Precipitation: 3%</li>
+                    <li id="uvindex">UV Index: Low</li>
+                    <li id="humidity">Humidity: 20%</li>
+                    <li id="advice">Don't be tricked by the sun, dress well.</li>
+                </ul>
+                         
                 </div></div>
                     <div class="row">
                         <div class="card-group">
