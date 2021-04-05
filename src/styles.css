@@ -2,7 +2,9 @@ body {
   font-family: "Rubik", sans-serif;
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
-
+#full {
+  margin-top: 20px;
+}
 .logo {
   width: 100px;
   position: relative;
