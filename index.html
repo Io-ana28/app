@@ -29,32 +29,33 @@
         <input type="search" placeholder="Type a city..." id="city-input" class="form-control" /></div>
     <div class="col-auto">
         <input type="submit" value="search" class="btn btn-primary"/></div>
-        <div class="col-3"><button class="btn btn-primary">Current Location</button></div>
+        <div class="col-3"><button class="btn btn-primary" >Current Location</button></div>
     </div></form>
    
     
     </div>
     
     <div class="card citycard" style="max-width: 62rem;">
-       <h1 class="city">Prague
-    <span class="units"><sup>
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="celsius-link">°F</a>
-        </sup>
-    </span></h1>
+       <h1 class="city">Prague</h1>
+    
             <div class="row">
             <div class="col"><ul>
                     <li><span class="cityemoji">☀️</span></li>
-                    <li><span class="currtemp"><strong>-5°C / -15°C 🌙</strong></li>
+                    <li><span class="currtemp"><strong>-5</strong>
+                        <span class="units"><sup>
+                            <a href="#" id="celsius-link">°C</a> |
+                            <a href="#" id="fahrenheit-link">°F</a>
+                        </sup></span>
+                    </span></li>
                     <li><span id="date" class="text-muted">Sunday,
                         February 14th, 2021</span></li>
                 </ul>          
             </div>
             
             <div class="col"><span class="currdetails"><ul>
-                    <li id="precipitation">Precipitation: 3%</li>
+                    <li>Wind speed:<span id="wind"> 3km/h</span></li>
                     <li id="uvindex">UV Index: Low</li>
-                    <li id="humidity">Humidity: 20%</li>
+                    <li>Humidity:<span id="humidity"> 20%</span></li>
                     <li id="advice">Don't be tricked by the sun, dress well.</li>
                 </ul>
             </div></div>
@@ -119,8 +120,8 @@
     </div></div>
 </div>
             
-<p class="code-link"><a href="https://github.com/Io-ana28/app" target="_blank">Open-source code</a> by Ida</p>
-            <script src="src/index.js"></script>
+<p class="code-link"><a href="https://github.com/Io-ana28/app" target="_blank" id="link">Open-source code</a> by Ida</p> 
+<script src="src/index.js"></script>
 </body>
 
 </html>

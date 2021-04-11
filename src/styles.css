@@ -1,6 +1,6 @@
 body {
   font-family: "Rubik", sans-serif;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
 }
 #full {
   margin-top: 20px;
@@ -21,6 +21,7 @@ button {
 }
 ul {
   list-style: none;
+  text-transform: capitalize;
 }
 #city-input {
   position: relative;
@@ -38,6 +39,9 @@ ul {
 }
 
 #celsius-link {
+  text-decoration: none;
+}
+#fahrenheit-link {
   text-decoration: none;
 }
 .info {
@@ -70,7 +74,7 @@ h1 {
   color: #0d335d;
 }
 .currtemp {
-  font-size: 25px;
+  font-size: 30px;
   color: #0d335d;
 }
 .cityemoji {
@@ -100,7 +104,9 @@ h1 {
 .code-link {
   font-size: 15px;
   text-align: center;
-}
-a {
   text-decoration: none;
+  color: #fff;
+}
+#link {
+  color: #fff;
 }

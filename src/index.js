@@ -36,25 +36,9 @@ let now = new Date();
 let currentDayTime = document.querySelector("#date");
 currentDayTime.innerHTML = formatDate(now);
 
-function switchCelsius(event) {
-  event.preventDefault();
-  let currentTemp = document.querySelector(".currtemp");
-  currentTemp.innerHTML = "10°C / -5°C 🌙";
-}
 
-function switchFahrenheit(event) {
-  event.preventDefault();
-  let currentTemp = document.querySelector(".currtemp");
-  currentTemp.innerHTML = "50°F / 40°F 🌙";
-}
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-let celsiuslink = document.querySelector("#celsius-link");
-
-celsiuslink.addEventListener("click", switchCelsius);
-fahrenheitLink.addEventListener("click", switchFahrenheit);
-
-//week 5
 function getTemp(response) {
+    console.log(response.data);
   document.querySelector(".currtemp").innerHTML = Math.round(
     response.data.main.temp
   );
