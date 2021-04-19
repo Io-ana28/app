@@ -30,6 +30,8 @@ function formatDate(date) {
     "December"
   ];
   let month = months[date.getMonth()];
+  if (minutes < 10) {minutes = `0${minutes}`;}
+  if (hours < 10) {hours = `0${hours}`;}
   return `${day}, ${month} ${todaydate}, ${year}, ${hours}:${minutes}`;
 }
 let now = new Date();
@@ -38,24 +40,23 @@ currentDayTime.innerHTML = formatDate(now);
 
 
 function getTemp(response) {
-    console.log(response.data);
+  console.log(response.data); 
+  document.querySelector(".city").innerHTML = response.data.name; 
+  let emojiElement = document.querySelector(".cityemoji");
+  emojiElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
   document.querySelector(".currtemp").innerHTML = Math.round(
     response.data.main.temp
   );
-  document.querySelector(".city").innerHTML = response.data.name;
+  document.querySelector(".description").innerHTML = response.data.weather[0].main;
+  document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+
+ 
 }
 
-function getCity(event) {
-  event.preventDefault();
-  let apiKey = "3874a3ee9dbe37f50fedf11a9907b865";
-  let city = document.querySelector("#city-input").value;
-  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-  axios.get(apiURL).then(getTemp);
-}
-
-let searchButton = document.querySelector("#search-form");
-searchButton.addEventListener("submit", getCity);
 
 function showPosition(position) {
   //console.log(position.coords.latitude);
@@ -73,3 +74,9 @@ function CurrDetails(event) {
 
 let locationButton = document.querySelector("button");
 locationButton.addEventListener("click", CurrDetails);
+
+let apiKey = "3874a3ee9dbe37f50fedf11a9907b865";
+  let city = "Prague";
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiURL).then(getTemp);

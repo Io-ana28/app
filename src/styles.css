@@ -70,16 +70,20 @@ ul {
 h1 {
   font-weight: 900;
   text-align: left;
-  padding: 20px;
+  padding: 10px 20px;
   color: #0d335d;
+}
+
+.cityemoji {
+  font-size: 50px;
 }
 .currtemp {
-  font-size: 30px;
+  font-size: 40px;
   color: #0d335d;
 }
-.cityemoji {
-  font-size: 30px;
-  padding: 30px;
+.description {
+  font-size: 25px;
+  color: #0d335d;
 }
 .currdetails {
   color: #0d335d;
