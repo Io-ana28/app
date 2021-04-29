@@ -37,7 +37,26 @@ ul {
   font-style: italic;
   font-size: 15px;
 }
-
+.units {
+  position: relative;
+  top: -15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.currtemp {
+  font-size: 50px;
+  color: #0d335d;
+  font-weight: 600;
+  position: relative;
+  vertical-align: middle;
+}
+.active {
+  color: #0d335d;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
 #celsius-link {
   text-decoration: none;
 }
@@ -76,10 +95,6 @@ h1 {
 
 .cityemoji {
   font-size: 50px;
-}
-.currtemp {
-  font-size: 40px;
-  color: #0d335d;
 }
 .description {
   font-size: 25px;

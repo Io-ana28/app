@@ -26,7 +26,7 @@
         </div>
        
     <div class="col-3">
-        <input type="search" placeholder="Type a city..." id="city-input" class="form-control" /></div>
+        <input type="search" placeholder="Type a city..." id="city-input" class="form-control" autocomplete="off"/></div>
     <div class="col-auto">
         <input type="submit" value="search" class="btn btn-primary"/></div>
         <div class="col-3"><button class="btn btn-primary" >Current Location</button></div>
@@ -37,15 +37,14 @@
     
     <div class="card citycard" style="max-width: 62rem;">
        <h1 class="city">Prague</h1>
-    
             <div class="row">
             <div class="col">
                    <ul> <li><img src="" alt="emoji" class="cityemoji"/>
-                    <span class="currtemp"><strong>-5</strong></span>
-                        <span class="units"><sup>
-                            <a href="#" id="celsius-link">°C</a> |
+                    <span class="currtemp">-5</span>
+                        <span class="units">
+                            <a href="#" id="celsius-link" class="active">°C</a> |
                             <a href="#" id="fahrenheit-link">°F</a>
-                        </sup>
+                        
                     </span></li>
                     <li> <span class="description">...</span></li>
            
@@ -53,11 +52,9 @@
                         February 14th, 2021</span></li>
                 </ul>
             </div>
-            
             <div class="col"><span class="currdetails"><ul>
                     <li>Wind speed: <span id="wind">3</span> km/h</li>
                     <li>Humidity: <span id="humidity"> 20</span>%</li>
-                    
                 </ul>
             </div></div>
                     <div class="row">
